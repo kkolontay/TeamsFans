@@ -12,7 +12,7 @@
         <!--Leagues-->
         <scene sceneID="bVa-jE-EWW">
             <objects>
-                <tableViewController id="dYh-1o-QPO" customClass="LeaguesView" customModule="TeamsFans" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LeaguesView" id="dYh-1o-QPO" customClass="LeaguesView" customModule="TeamsFans" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p6Y-TW-lck">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Teams-->
         <scene sceneID="xFI-uP-A8G">
             <objects>
-                <tableViewController id="S3N-xr-Dqp" customClass="LeaguesTeamsView" customModule="TeamsFans" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="LeaguesTeamsView" id="S3N-xr-Dqp" customClass="LeaguesTeamsView" customModule="TeamsFans" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="l7D-0R-4CH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

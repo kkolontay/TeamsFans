@@ -40,7 +40,7 @@ class LeaguesTeamsView: BaseTableViewController {
         }
       }
       viewModel?.fetchTeams(slug: slug)
-      stopActivityIndicator()
+      showActivityIndicator()
       navigationItem.searchController?.searchResultsUpdater = self
       tableView.tableFooterView = UIView()
   }
@@ -61,11 +61,9 @@ class LeaguesTeamsView: BaseTableViewController {
     }
     cell.setData(searchTeams[indexPath.row])
     if let url = searchTeams[indexPath.row].logo, !url.isEmpty {
-      DispatchQueue.global(qos: .background).async {
       self.viewModel?.fetchLogo(url: url, logo: {[weak cell] (image, networkUrl) in
         cell?.setImage(image, url: networkUrl)
       })
-      }
     }
   }
   

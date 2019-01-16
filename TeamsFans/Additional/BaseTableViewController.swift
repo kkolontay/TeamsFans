@@ -27,9 +27,7 @@ class BaseTableViewController: UITableViewController {
     let window = (UIApplication.shared.delegate as! AppDelegate).window
     let heightWindow = window?.bounds.height
     let widthWindow = window?.bounds.width
-    let heightActivity = activityIndicator?.bounds.height
-    let widthActivity = activityIndicator?.bounds.width
-    activityIndicator?.frame = CGRect(x: (widthWindow ?? 0 - (widthActivity ?? 0)) / 2, y: (heightWindow ?? 0 - (heightActivity ?? 0)) / 2, width: widthWindow ?? 0, height: heightWindow ?? 0)
+    activityIndicator?.frame = CGRect(x: (widthWindow ?? 0 - 45) / 2, y: (heightWindow ?? 0 - 45) / 2, width: 45, height: 45)
     window?.addSubview(activityIndicator!)
     activityIndicator?.startAnimating()
   }

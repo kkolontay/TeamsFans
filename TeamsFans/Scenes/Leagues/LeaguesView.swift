@@ -41,7 +41,7 @@ class LeaguesView: BaseTableViewController {
         }
       }
       viewModel?.fetchLeagues()
-      stopActivityIndicator()
+      showActivityIndicator()
       navigationItem.searchController?.searchResultsUpdater = self
       tableView.tableFooterView = UIView()
     }
